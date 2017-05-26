@@ -1,12 +1,135 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Мишка</title>
+</head>
+<body>
+<nav class="top-menu">
+  <div class="top-menu__wrap">
+    <span class="page-logo">
+      <img src="http://placehold.it/86x35" width="86" height="35" alt="Mishka">
+    </span>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
+    <button class="top-menu__button" type="button">Menu</button>
 
-  </body>
+    <ul class="top-menu__list top-menu__list--nojs">
+      <li class="top-menu__item"><a class="top-menu__link" href="#">Каталог товаров</a></li>
+      <li class="top-menu__item"><a class="top-menu__link" href="#">Вязание на заказ</a></li>
+      <li class="top-menu__item top-menu__item--search"><a class="top-menu__link" href="#">Поиск по сайту</a></li>
+      <li class="top-menu__item"><a class="top-menu__link" href="#">Корзина: пока пуста</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="page-header">
+  <div class="page-header__wrap">
+    <h1 class="page-title">Милые штуки ручной работы для дома</h1>
+
+    <div class="page-header__goods">
+      <a href="#" class="page-header__goods-link">Предметы интерьера</a>
+      <a href="#" class="page-header__goods-link page-header__goods-link--darken">Детские игрушки</a>
+    </div>
+  </div>
+</header>
+
+<section class="pop-goods">
+  <div class="pop-goods__wrap">
+    <h2 class="pop-goods__title">Вязаные корзинки</h2>
+    <span class="pop-goods__subtitle">Товар недели</span>
+
+    <div class="pop-goods__description">
+      <p>Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+    </div>
+
+    <table class="pop-goods__table">
+      <tr>
+        <td>Цвет:</td>
+        <td>«Тиффани»/серый</td>
+      </tr>
+      <tr>
+        <td>Диаметр:</td>
+        <td>25 см</td>
+      </tr>
+      <tr>
+        <td>Высота:</td>
+        <td>15 см</td>
+      </tr>
+    </table>
+
+    <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
+    <div class="pop-goods__price">Цена: 990 руб.</div>
+    <a class="button" href="#">Заказать</a>
+  </div>
+</section>
+
+<section class="about-us">
+  <div class="about-us__wrap">
+    <h2 class="about-us__title">Коротко о нас:</h2>
+    <ul class="about-us__list">
+      <li class="about-us__item">Экологически чистые материалы</li>
+      <li class="about-us__item">Скандинавский стиль по российской цене</li>
+      <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+      <li class="about-us__item">Связано вручную с любовью и умилением</li>
+      <li class="about-us__item">Поддержка отечественного производителя</li>
+      <li class="about-us__item">Поставляется в подарочной упаковке</li>
+    </ul>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="reviews__wrap">
+    <h2 class="reviews__title">Отзывы</h2>
+
+    <blockquote class="reviews__quote quote">
+      <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+      <cite class="quote__author">Анастасия Красильникова<span>@misssssiskras</span></cite>
+    </blockquote>
+
+    <ul class="pager">
+      <li class="pager__item pager__item--previous">Предыдущий</li>
+      <li class="pager__item pager__item--next">Следующий</li>
+    </ul>
+
+    <a href="#" class="button">Написать</a>
+  </div>
+</section>
+
+<section class="contacts">
+  <div class="contacts__wrap">
+    <h2 class="contacts__title">Контакты</h2>
+
+    <dl class="contacts__list">
+      <dt>e-mail:</dt>
+      <dd>info@mimimishkashop.ru</dd>
+      <dt>адрес:</dt>
+      <dd>
+        г. Санкт-Петербург,<br>
+        ул. Большая Конюшенная,<br>
+        д. 19/8, офис 101
+      </dd>
+    </dl>
+
+    <div class="contacts__map"></div>
+
+    <a class="button" href="#">Напишите нам</a>
+  </div>
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer__wrap">
+    <div class="social-links">
+      <a href="" class="social-links__link" title="Инстаграм"></a>
+      <a href="" class="social-links__link" title="Фейсбук"></a>
+      <a href="" class="social-links__link" title="Твитер"></a>
+    </div>
+
+    <div class="page-footer__copyright">
+      Разработано <a  href="https://htmlacademy.ru/intensive/adaptive"></a>
+    </div>
+  </div>
+</footer>
+
+</body>
 </html>
