@@ -6,22 +6,27 @@
   <title>HTML Academy: Мишка</title>
 </head>
 <body>
-<nav class="top-menu">
+<div class="top-menu">
   <div class="top-menu__wrap">
-    <span class="page-logo">
+    <div class="top-menu__logo">
       <img src="http://placehold.it/86x35" width="86" height="35" alt="Mishka">
-    </span>
+    </div>
 
-    <button class="top-menu__button" type="button">Menu</button>
+    <nav class="top-menu__nav main-nav main-nav--nojs">
+      <button class="top-menu__button" type="button">Menu</button>
 
-    <ul class="top-menu__list top-menu__list--nojs">
-      <li class="top-menu__item"><a class="top-menu__link" href="#">Каталог товаров</a></li>
-      <li class="top-menu__item"><a class="top-menu__link" href="#">Вязание на заказ</a></li>
-      <li class="top-menu__item top-menu__item--search"><a class="top-menu__link" href="#">Поиск по сайту</a></li>
-      <li class="top-menu__item"><a class="top-menu__link" href="#">Корзина: пока пуста</a></li>
-    </ul>
+      <ul class="main-nav__list main-nav__list--main">
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
+      </ul>
+
+      <ul class="main-nav__list main-nav__list--extra">
+        <li class="main-nav__item"><a class="main-nav__link" href="#"><span>Поиск по сайту</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+      </ul>
+    </nav>
   </div>
-</nav>
+</div>
 
 <header class="page-header">
   <div class="page-header__wrap">
