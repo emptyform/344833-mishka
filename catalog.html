@@ -118,5 +118,31 @@
     </div>
   </div>
 </footer>
+
+<!-- Modal -->
+<div class="modal" style="display: none">
+  <div class="modal__content add-cart">
+    <h2 class="add-cart__title">Добавить в корзину</h2>
+
+    <form class="add-cart__form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="radio radio--button">
+        <input class="radio__input" type="radio" id="size-s" name="size" value="size-s" checked>
+        <label class="radio__label" for="size-s">s</label>
+      </div>
+
+      <div class="radio radio--button">
+        <input class="radio__input" type="radio" id="size-m" name="size" value="size-m">
+        <label class="radio__label" for="size-m">m</label>
+      </div>
+
+      <div class="radio radio--button">
+        <input class="radio__input" type="radio" id="size-l" name="size" value="size-l">
+        <label class="radio__label" for="size-l">l</label>
+      </div>
+
+      <input class="button button--colored" type="submit" value="Добавить">
+    </form>
+  </div>
+</div>
 </body>
 </html>
