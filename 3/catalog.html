@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Academy: Мишка</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <base href="https://htmlacademy-adaptive.github.io/344833-mishka/3/">
+</head>
+<body>
+<div class="top-menu">
+  <div class="top-menu__wrap">
+    <div class="top-menu__logo">
+      <img src="http://placehold.it/86x35" width="86" height="35" alt="Mishka">
+    </div>
+
+    <nav class="top-menu__nav main-nav main-nav--nojs">
+      <button class="top-menu__button" type="button">Menu</button>
+
+      <ul class="main-nav__list main-nav__list--main">
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Каталог товаров</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Вязание на заказ</a></li>
+      </ul>
+
+      <ul class="main-nav__list main-nav__list--extra">
+        <li class="main-nav__item"><a class="main-nav__link" href="#"><span>Поиск по сайту</span></a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+<header class="page-header">
+  <div class="page-header__wrap">
+    <h1 class="page-title">Каталог товаров</h1>
+  </div>
+</header>
+
+<section class="products">
+  <h2 class="products__title">Товары</h2> <!-- скрыт -->
+
+  <div class="products__wrap">
+    <article class="card">
+      <a class="card__img-link" href="#">
+        <img src="http://placehold.it/260x195" width="260" height="195" alt="Зайчик-попрыгайчик">
+      </a>
+
+      <div class="card__wrap">
+        <h3 class="card__title">Зайчик-попрыгайчик</h3>
+        <div class="card__dimensions">Рост 30 см, вес 200 г</div>
+
+        <div class="card__footer">
+          <div class="card__price">1 200 руб.</div>
+          <button class="card__button" type="button">Добавит в корзину</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <a class="card__img-link" href="#">
+        <img src="http://placehold.it/260x195" width="260" height="195" alt="Корзинка для белья">
+      </a>
+
+      <div class="card__wrap">
+        <h3 class="card__title">Корзинка для белья</h3>
+        <div class="card__dimensions">Диаметр 15 см, высота 10 см</div>
+
+        <div class="card__footer">
+          <div class="card__price">690 руб.</div>
+          <button class="card__button" type="button">Добавит в корзину</button>
+        </div>
+      </div>
+    </article>
+
+    <article class="card">
+      <a class="card__img-link" href="#">
+        <img src="http://placehold.it/260x195" width="260" height="195" alt="Большая корзинка для игрушек">
+      </a>
+
+      <div class="card__wrap">
+        <h3 class="card__title">Большая корзинка для игрушек</h3>
+        <div class="card__dimensions">Диаметр 30 см, высота 30 см</div>
+
+        <div class="card__footer">
+          <div class="card__price">1 500 руб.</div>
+          <button class="card__button" type="button">Добавит в корзину</button>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="making">
+  <h2 class="making__title">Процесс производства</h2>
+
+  <div class="video">
+    <video src="#"></video>
+    <span class="video__play"></span>
+  </div>
+
+  <div class="making__wrap">
+    <div class="making__description">
+      <p>По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+    </div>
+
+    <a class="button" href="#">Сделать заказ</a>
+  </div>
+</section>
+
+<footer class="page-footer">
+  <div class="page-footer__wrap">
+    <div class="social-links">
+      <a href="" class="social-links__link" title="Инстаграм"></a>
+      <a href="" class="social-links__link" title="Фейсбук"></a>
+      <a href="" class="social-links__link" title="Твитер"></a>
+    </div>
+
+    <div class="page-footer__copyright">
+      Разработано <a  href="https://htmlacademy.ru/intensive/adaptive"></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Modal -->
+<div class="modal" style="display: none">
+  <div class="modal__content add-cart">
+    <h2 class="add-cart__title">Добавить в корзину</h2>
+
+    <form class="add-cart__form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="radio radio--button">
+        <input class="radio__input" type="radio" id="size-s" name="size" value="size-s" checked>
+        <label class="radio__label" for="size-s">s</label>
+      </div>
+
+      <div class="radio radio--button">
+        <input class="radio__input" type="radio" id="size-m" name="size" value="size-m">
+        <label class="radio__label" for="size-m">m</label>
+      </div>
+
+      <div class="radio radio--button">
+        <input class="radio__input" type="radio" id="size-l" name="size" value="size-l">
+        <label class="radio__label" for="size-l">l</label>
+      </div>
+
+      <input class="button button--colored" type="submit" value="Добавить">
+    </form>
+  </div>
+</div>
+</body>
+</html>

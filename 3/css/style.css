@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  font-size: 15px;
+  font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
+  background-color: #74EA4F;
+}
+/* FONTS */
+@font-face {
+  font-weight: normal;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+}
+@font-face {
+  font-weight: bold;
+  font-family: "OpenSans";
+  font-style: normal;
+  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+}
+.top-menu {
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 0 #ececec;
+}
+.top-menu__wrap {
+  position: relative;
+}
+.top-menu__logo {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 79px;
+}
+.top-menu__nav {
+  background-color: #ffffff;
+  box-shadow: 0 1px 0 0 #ececec;
+}
+.top-menu__nav--closed {
+  display: none;
+}
+.top-menu__nav--opened {
+  position: absolute;
+  display: block;
+  width: 100%;
+}
+.top-menu__button {
+  position: absolute;
+  top: 17px;
+  right: 15px;
+  margin: 0;
+  padding: 15px;
+  background-color: transparent;
+  border: none;
+}
+.top-menu__button--opened {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.top-menu__button--opened svg {
+  height: 20px;
+}
+.main-nav__list {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+.main-nav__item {
+  position: relative;
+  border-top: 1px solid #ececec;
+}
+.main-nav__link {
+  position: relative;
+  display: block;
+  padding-left: 75px;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 80px;
+  color: #000000;
+  text-decoration: none;
+}
+.main-nav__link svg {
+  position: absolute;
+  top: 50%;
+  left: 30px;
+  margin-top: -9px;
+  fill: rgba(35, 31, 32, 0.2);
+}
+.main-nav__link:hover,
+.main-nav__link:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+.main-nav__link:hover svg,
+.main-nav__link:focus svg {
+  fill: #63d1bb;
+}
+.main-nav__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+.main-nav__link:active svg {
+  fill: rgba(99, 209, 187, 0.3);
+}
