@@ -53,6 +53,7 @@ body {
   padding: 15px;
   background-color: transparent;
   border: none;
+  outline: none;
 }
 .top-menu__button--opened {
   padding-top: 12px;
@@ -80,6 +81,7 @@ body {
   line-height: 80px;
   color: #000000;
   text-decoration: none;
+  outline: none;
 }
 .main-nav__link svg {
   position: absolute;
