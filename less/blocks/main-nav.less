@@ -1,0 +1,49 @@
+.main-nav__list {
+  .list-style();
+}
+
+.main-nav__item {
+  position: relative;
+
+  border-top: 1px solid @main-nav__item-border;
+}
+
+.main-nav__link {
+  position: relative;
+
+  display: block;
+  padding-left: 75px;
+
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 80px;
+  color: @main-nav__link-color;
+  text-decoration: none;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+
+    margin-top: -9px;
+
+    fill: @main-nav__link-fill;
+  }
+
+  &:hover,
+  &:focus {
+    color: @main-nav__link-color-hover;
+
+    svg {
+      fill: @main-nav__link-fill-hover;
+    }
+  }
+
+  &:active {
+    color: @main-nav__link-color-active;
+
+    svg {
+      fill: @main-nav__link-fill-active;
+    }
+  }
+}

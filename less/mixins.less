@@ -1,0 +1,20 @@
+/* Font face. */
+.fontface(@family, @filepath: @family, @weight: normal, @style: normal) {
+  @font-face {
+    font-weight: @weight;
+    font-family: "@{family}";
+    font-style: @style;
+
+    src: url("../fonts/@{filepath}.woff") format("woff"),
+    url("../fonts/@{filepath}.woff2") format("woff2");
+  }
+}
+
+/* List style. */
+.list-style() {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
