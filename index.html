@@ -94,7 +94,7 @@
 
     <img src="http://placehold.it/260x315" width="260" height="315" alt="Вязаные корзинки">
     <div class="pop-goods__price">Цена: 990 руб.</div>
-    <a class="button" href="#">Заказать</a>
+    <a class="button" href="#" id="open-modal">Заказать</a>
   </div>
 </section>
 
@@ -179,25 +179,29 @@
 <!-- Modal -->
 <div class="modal" style="display: none">
   <div class="modal__content add-cart">
-    <h2 class="add-cart__title">Добавить в корзину</h2>
+    <h2 class="modal__title">Добавить в&nbsp;корзину</h2>
 
     <form class="add-cart__form" action="https://echo.htmlacademy.ru/" method="post">
-      <div class="radio radio--button">
-        <input class="radio__input" type="radio" id="size-s" name="size" value="size-s" checked>
-        <label class="radio__label" for="size-s">s</label>
+      <div class="add-cart__label">Выберите размер:</div>
+
+      <div class="add-cart__radio-group">
+        <div class="radio">
+          <input class="radio__input" type="radio" id="size-s" name="size" value="size-s" checked>
+          <label class="radio__label button button--outline-colored" for="size-s">s</label>
+        </div>
+
+        <div class="radio">
+          <input class="radio__input" type="radio" id="size-m" name="size" value="size-m">
+          <label class="radio__label button button--outline-colored" for="size-m">m</label>
+        </div>
+
+        <div class="radio">
+          <input class="radio__input" type="radio" id="size-l" name="size" value="size-l">
+          <label class="radio__label button button--outline-colored" for="size-l">l</label>
+        </div>
       </div>
 
-      <div class="radio radio--button">
-        <input class="radio__input" type="radio" id="size-m" name="size" value="size-m">
-        <label class="radio__label" for="size-m">m</label>
-      </div>
-
-      <div class="radio radio--button">
-        <input class="radio__input" type="radio" id="size-l" name="size" value="size-l">
-        <label class="radio__label" for="size-l">l</label>
-      </div>
-
-      <input class="button button--colored" type="submit" value="Добавить">
+      <input class="button button--colored button--block" type="submit" value="Добавить">
     </form>
   </div>
 </div>
@@ -225,6 +229,15 @@
 
       use.setAttribute("xlink:href", "#icon-menu-open")
     }
+  });
+</script>
+<script>
+  var modal = document.querySelector(".modal");
+  var modalButton = document.getElementById("open-modal");
+
+  modalButton.addEventListener("click", function (evt) {
+    modal.style.display = 'block';
+    evt.preventDefault();
   });
 </script>
 </body>
