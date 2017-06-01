@@ -4,7 +4,7 @@ body {
   font-size: 15px;
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   color: #444444;
-  background-color: #74ea4f;
+  background-color: #ffffff;
 }
 /* FONTS */
 @font-face {
@@ -159,6 +159,50 @@ body {
 .page-header__goods-link--darken::before {
   background: url("../img/icon-toy.svg") no-repeat;
 }
+.pop-goods img {
+  display: block;
+  margin: 0 auto;
+}
+.pop-goods__wrap {
+  padding-right: 30px;
+  padding-left: 30px;
+  /* @media @tablet-width {
+     margin-right: auto;
+     margin-left: auto;
+     width: 668px;
+   }
+
+   @media @desktop-width {
+     width: 1050px;
+   }*/
+}
+.pop-goods__title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: #000000;
+}
+.pop-goods__subtitle {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+.pop-goods__table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.pop-goods__table td {
+  border-bottom: 1px solid #ececec;
+  padding: 5px 10px 5px 0;
+}
+.pop-goods__price {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
 .page-footer {
   background-color: #f1f1f1;
 }
@@ -235,6 +279,7 @@ body {
   box-sizing: border-box;
   min-width: 82px;
   padding: 14px 30px;
+  width: 100%;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
