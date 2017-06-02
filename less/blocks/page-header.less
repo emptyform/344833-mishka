@@ -1,10 +1,19 @@
 .page-header {
-  background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -18px;
+  background-color: #f1f1f1;
+
+  &--front {
+    background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -18px;
+  }
+
 }
 
 .page-header__wrap {
   display: flex;
   flex-direction: column;
+  min-height: 177px;
+}
+
+.page-header--front .page-header__wrap {
   min-height: 490px;
 }
 
