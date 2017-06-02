@@ -19,6 +19,17 @@
   list-style: none;
 }
 
+/* Element invisible */
+.element-invisible() {
+  position: absolute !important;
+
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
 /* Media queries. */
 .container() {
   padding-right: 30px;
