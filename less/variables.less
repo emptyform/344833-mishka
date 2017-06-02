@@ -1,0 +1,84 @@
+@black: #000000;
+@white: #ffffff;
+
+@gray--lighten:       #f9f9f9;
+@gray--light:         #f1f1f1;
+@gray:                #ececec;
+@gray--dark:          #444444;
+@gray--darken:        #231f20; // Цвет иконки
+
+@color-main--light:   #59d5bc; // При наведении/нажатии
+@color-main:          #63d1bb;
+@color-main--dark:    #62d1ba; // Радио
+@color-main--darken:  #56c3b2; // Темная
+@color-main--darkest: #46c1ae; // Темная при наведении/нажатии
+
+
+/* Top menu */
+@top-menu-bg:          @white;
+@top-menu-border:      @gray;
+
+@top-menu__nav-bg:     @white;
+@top-menu__nav-border: @gray;
+
+/* Main nav */
+@main-nav__item-border:       @gray;
+
+@main-nav__link-color:        @black;
+@main-nav__link-fill:         fade(@gray--darken, 20%);
+
+@main-nav__link-color-hover:  fade(@black, 60%);
+@main-nav__link-fill-hover:   @color-main;
+
+@main-nav__link-color-active: fade(@black, 30%);
+@main-nav__link-fill-active:  fade(@color-main, 30%);
+
+/* Page footer */
+@page-footer-bg:                   @gray--light;
+@page-footer__social-links-border: #e5e5e5;
+@page-footer__copyright-color:     @black;
+
+@page-footer__copyright-link-fill:        @color-main;
+@page-footer__copyright-link-fill-hover:  @color-main--darkest;
+@page-footer__copyright-link-fill-active: fade(@color-main--darkest, 30%);
+
+/* Social links */
+@social-links__link-fill:        @gray--darken;
+@social-links__link-fill-hover:  @color-main--darkest;
+@social-links__link-fill-active: fade(@color-main--darkest, 30%);
+
+/* Button */
+@button-color:  @gray--dark;
+@button-border: @gray--dark;
+
+@button-color-hover: @white;
+@button-bg-hover:    @gray--dark;
+
+@button-color-active: fade(@white, 30%);
+@button-bg-active:    @gray--dark;
+
+@button--colored-color:  @white;
+@button--colored-bg:     @color-main;
+@button--colored-border: @color-main;
+
+@button--colored-bg-hover: @color-main--light;
+
+@button--outline-colored-border: fade(@gray--dark, 10%);
+
+@button--outline-colored-color-hover:  @gray--dark;
+@button--outline-colored-border-hover: fade(@gray--dark, 30%);
+
+@button--outline-colored-color-active:  @gray--dark;
+@button--outline-colored-border-active: @color-main--dark;
+
+/* Modal */
+@modal-bg: fade(@white, 90%);
+
+@modal__content-bg:     @white;
+@modal__content-border: #c6c6c6;
+@modal__content-shadow: fade(#000101, 25%);
+
+@modal__title-color: @black;
+
+/* Radio */
+@radio__label-border-checked: @button--outline-colored-border-active;

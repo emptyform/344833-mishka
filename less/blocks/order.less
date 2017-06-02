@@ -1,0 +1,37 @@
+.order {
+  .container();
+}
+
+.order__title {
+  .element-invisible();
+}
+
+.order__description {
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.order__subtitle {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: calc(~"100% - 63px");
+    height: 1px;
+    background: #62d1ba;
+  }
+
+  &--mail {
+    &::after {
+      width: calc(~"100% - 81px");
+    }
+  }
+}

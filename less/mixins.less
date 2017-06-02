@@ -1,0 +1,47 @@
+/* Font face. */
+.fontface(@family, @filepath: @family, @weight: normal, @style: normal) {
+  @font-face {
+    font-weight: @weight;
+    font-family: "@{family}";
+    font-style: @style;
+
+    src: url("../fonts/@{filepath}.woff") format("woff"),
+    url("../fonts/@{filepath}.woff2") format("woff2");
+  }
+}
+
+/* List style. */
+.list-style() {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+
+  list-style: none;
+}
+
+/* Element invisible */
+.element-invisible() {
+  position: absolute !important;
+
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Media queries. */
+.container() {
+  padding-right: 30px;
+  padding-left: 30px;
+
+  /* @media @tablet-width {
+     margin-right: auto;
+     margin-left: auto;
+     width: 668px;
+   }
+
+   @media @desktop-width {
+     width: 1050px;
+   }*/
+}

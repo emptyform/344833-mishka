@@ -1,0 +1,35 @@
+.video {
+  position: relative;
+
+  text-align: center;
+
+  background-color: #e6e6e6;
+
+  video {
+    vertical-align: bottom;
+  }
+}
+
+.video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 101px;
+  height: 77px;
+
+  background: url("../img/icon-play.svg") no-repeat;
+  transform: translateY(-50%) translateX(-50%);
+  cursor: pointer;
+
+  transition: all 0.1s ease 0.1s;
+
+  &:hover {
+    transform: translateY(-50%) translateX(-50%) scale(1.2, 1.2);
+  }
+
+  &:active {
+    transform: translateY(-50%) translateX(-50%) scale(0.8, 0.8);
+    opacity: 0.3;
+  }
+}

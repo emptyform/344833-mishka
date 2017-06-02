@@ -1,0 +1,25 @@
+.social-links__link {
+  padding-right: 20px;
+  padding-left: 20px;
+
+  outline: none;
+
+  svg {
+    display: block;
+
+    fill: @social-links__link-fill;
+  }
+
+  &:hover,
+  &:focus {
+    svg {
+      fill: @social-links__link-fill-hover;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: @social-links__link-fill-active;
+    }
+  }
+}
