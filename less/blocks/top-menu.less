@@ -1,6 +1,8 @@
 .top-menu {
   background-color: @top-menu-bg;
   box-shadow: 0 1px 0 0 @top-menu-border;
+  position: relative;
+  z-index: 5;
 }
 
 .top-menu__wrap {
@@ -49,5 +51,22 @@
     svg {
       height: 20px;
     }
+  }
+}
+
+@media @tablet-width {
+  .top-menu__wrap {
+    .container();
+    display: flex;
+  }
+
+  .top-menu__button {
+    display: none;
+  }
+
+  .top-menu__nav {
+    display: flex;
+    margin-left: auto;
+    box-shadow: none;
   }
 }
