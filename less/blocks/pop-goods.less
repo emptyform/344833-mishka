@@ -46,3 +46,53 @@
   line-height: 24px;
   text-align: center;
 }
+
+@media @tablet-width {
+  .pop-goods__wrap {
+    position: relative;
+  }
+
+  .pop-goods__inner {
+    box-sizing: border-box;
+    width: 50%;
+    min-height: 315px;
+    padding-right: 44px;
+
+    img {
+      position: absolute;
+      right: 50px;
+      bottom: 0;
+    }
+  }
+
+  .pop-goods__title {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .pop-goods__subtitle {
+    position: absolute;
+    top: 0;
+    right: 50px;
+
+    width: 100px;
+
+    line-height: 17px;
+    text-align: center;
+  }
+}
+
+@media @desktop-width {
+  .pop-goods__title {
+    padding-left: 175px;
+  }
+
+  .pop-goods__subtitle {
+    left: 80px;
+  }
+
+  .pop-goods__inner {
+    padding-right: 58px;
+    padding-left: 175px;
+  }
+}

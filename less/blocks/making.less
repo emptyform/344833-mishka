@@ -24,3 +24,39 @@
   font-weight: 400;
   line-height: 24px;
 }
+
+@media @tablet-width {
+  .making__wrap {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .making__video {
+    order: -1;
+  }
+}
+
+@media @desktop-width {
+  .making__wrap {
+    position: relative;
+    min-height: 455px;
+  }
+
+  .making__title {
+    width: 367px;
+    box-sizing: border-box;
+    margin-left: 682px;
+  }
+
+  .making__video {
+    width: 682px;
+    height: 455px;
+    position: absolute;
+  }
+
+  .making__inner {
+    width: 367px;
+    box-sizing: border-box;
+    margin-left: 682px;
+  }
+}

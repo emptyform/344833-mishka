@@ -1,9 +1,9 @@
 .button {
   display: inline-block;
   box-sizing: border-box;
+  width: 100%;
   min-width: 82px;
   padding: 14px;
-  width: 100%;
 
   font-weight: 700;
   font-size: 17px;
@@ -71,5 +71,21 @@
   &::after,
   &::before {
     content: none;
+  }
+}
+
+@media @tablet-width {
+  .button {
+    width: auto;
+    padding-right: 40px;
+    padding-left: 40px;
+
+    &--outline-colored {
+      min-width: 112px;
+    }
+
+    &--block {
+      width: 100%;
+    }
   }
 }

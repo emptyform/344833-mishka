@@ -3,10 +3,10 @@
 }
 
 .contacts__title {
-  color:  #000000;
-  font-size: 18px;
   font-weight: 700;
+  font-size: 18px;
   line-height: 30px;
+  color: #000000;
 }
 
 .contacts__map {
@@ -16,8 +16,6 @@
   background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50%, 50%;
-  margin-left: -30px;
-  margin-right: -30px;
 }
 
 .contacts__list {
@@ -32,19 +30,106 @@
   }
 
   a {
-    text-decoration: none;
-    border-bottom: 1px solid #62d1ba;
     color: #444444;
+    text-decoration: none;
+
+    border-bottom: 1px solid #62d1ba;
 
     &:hover,
     &:focus {
-      border-color: #46c1ae;
       color: #46c1ae;
+
+      border-color: #46c1ae;
     }
 
     &:active {
       color: rgba(70, 193, 174, 0.3);
+
       border-color: rgba(70, 193, 174, 0.1);
     }
+  }
+}
+
+@media @tablet-width {
+  .contacts__wrap {
+    &--bg-flag {
+      background: url("../img/icon-flag.svg") no-repeat right 50px top;
+    }
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+  .contacts__title {
+    font-weight: 700;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  .contacts__list {
+    display: flex;
+
+    font-size: 17px;
+
+    dt {
+      min-width: 77px;
+    }
+
+    dd {
+      width: calc(~"50% - 77px");
+      margin: 0;
+    }
+  }
+
+  .contacts__button {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media @desktop-width {
+  .contacts {
+    position: relative;
+
+    width: 1150px;
+    min-height: 457px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .contacts__title {
+    padding-left: 175px;
+  }
+
+  .contacts__list {
+    display: block;
+    box-sizing: border-box;
+    width: 50%;
+    padding-left: 175px;
+
+    dd {
+      width: auto;
+      margin-left: 77px;
+    }
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 525px;
+  }
+
+  .contacts__wrap--bg-flag {
+    background-position: 0 0;
+  }
+
+  .contacts__wrap--center {
+    padding-left: 225px;
+
+    text-align: left;
   }
 }

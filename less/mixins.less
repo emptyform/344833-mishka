@@ -30,18 +30,23 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+@tablet-width: ~"(min-width: 768px)";
+@desktop-width: ~"(min-width: 1150px)";
+
 /* Media queries. */
 .container() {
   padding-right: 30px;
   padding-left: 30px;
 
-  /* @media @tablet-width {
-     margin-right: auto;
-     margin-left: auto;
-     width: 668px;
-   }
+  @media @tablet-width {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+    width: 668px;
+  }
 
-   @media @desktop-width {
-     width: 1050px;
-   }*/
+  @media @desktop-width {
+    width: 1050px;
+  }
 }

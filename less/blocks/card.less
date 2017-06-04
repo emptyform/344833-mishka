@@ -67,3 +67,24 @@
     fill: rgba(99, 209, 187, 0.3);
   }
 }
+
+@media @tablet-width {
+  .card {
+    display: flex;
+  }
+
+  .card__img-link {
+    width: 334px;
+  }
+}
+
+@media @desktop-width {
+  .card {
+    flex-direction: column;
+    width: 316px;
+  }
+
+  .card__img-link {
+    width: 100%;
+  }
+}
