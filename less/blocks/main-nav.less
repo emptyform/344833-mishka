@@ -87,3 +87,33 @@
     }
   }
 }
+
+@media @desktop-width {
+  .top-menu__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .top-menu__nav {
+    justify-content: space-between;
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .main-nav__list{
+    max-width: 450px;
+
+    &--main {
+      position: static;
+
+      a {
+        font-size: 17px;
+      }
+
+      li:last-child  a {
+        margin-right: 0;
+      }
+    }
+  }
+}
