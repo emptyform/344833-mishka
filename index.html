@@ -156,7 +156,7 @@
     </dl>
   </div>
 
-    <div class="contacts__map"></div>
+    <div class="contacts__map" id="map"></div>
 
   <div class="contacts__wrap contacts__wrap--center">
     <a class="contacts__button button" href="#">Напишите нам</a>
@@ -218,6 +218,7 @@
   </div>
 </div>
 
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script>
   var topMenu = document.querySelector(".top-menu__nav");
   var topMenuButton = document.querySelector(".top-menu__button");
@@ -251,6 +252,28 @@
     modal.style.display = 'block';
     evt.preventDefault();
   });
+</script>
+<script>
+  ymaps.ready(init);
+
+  function init () {
+    var myMap = new ymaps.Map('map', {
+        center: [59.9364, 30.3217],
+        zoom: 17
+      }),
+
+      myPlacemark = new ymaps.Placemark([59.9364, 30.3218], {
+        balloonContent: 'г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101'
+      }, {
+        iconLayout: 'default#image',
+        //iconImageClipRect: [[0,0], [66, 101]],
+        iconImageHref: 'img/icon-map-pin.svg',
+        iconImageSize: [66, 101],
+        iconImageOffset: [-33, -101]
+      });
+
+    myMap.geoObjects.add(myPlacemark);
+  }
 </script>
 </body>
 </html>
