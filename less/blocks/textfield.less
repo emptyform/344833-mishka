@@ -1,7 +1,3 @@
-.textfield {
-  margin-bottom: 20px;
-}
-
 .textfield__label {
   display: inline-block;
 
@@ -14,10 +10,11 @@
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   font-size: 17px;
+  line-height: 18px;
   font-family: inherit;
 
   background-color: transparent;
@@ -26,8 +23,28 @@
   outline: none;
 
   &--textarea {
-    padding: 17px;
+    padding: 13px 15px;
+    height: 142px;
 
     border: 2px solid #000000;
+  }
+}
+
+@media @tablet-width {
+  .textfield {
+    display: flex;
+    align-items: center;
+  }
+
+  .textfield__label {
+    margin-right: 25px;
+    font-size: 19px;
+  }
+
+  .textfield__input {
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 17px;
+    font-size: 19px;
   }
 }
