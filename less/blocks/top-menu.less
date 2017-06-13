@@ -1,12 +1,14 @@
 .top-menu {
-  background-color: @top-menu-bg;
-  box-shadow: 0 1px 0 0 @top-menu-border;
   position: relative;
   z-index: 5;
+
+  background-color: @top-menu-bg;
+  box-shadow: 0 1px 0 0 @top-menu-border;
 }
 
 .top-menu__wrap {
   position: relative;
+  min-width: 320px;
 }
 
 .top-menu__logo {
@@ -35,7 +37,7 @@
 .top-menu__button {
   position: absolute;
   top: 17px;
-  right: 15px;
+  right: 16px;
 
   margin: 0;
   padding: 15px;
@@ -56,8 +58,16 @@
 
 @media @tablet-width {
   .top-menu__wrap {
-    .container();
     display: flex;
+    width: 668px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  .top-menu__logo {
+    height: 88px;
   }
 
   .top-menu__button {
@@ -67,6 +77,13 @@
   .top-menu__nav {
     display: flex;
     margin-left: auto;
+
     box-shadow: none;
+  }
+}
+
+@media @tablet-width {
+  .top-menu__wrap {
+    width: 1050px;
   }
 }

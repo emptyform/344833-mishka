@@ -22,8 +22,6 @@
 
   <symbol id="icon-left-arrow" viewBox="0 0 50 26.003"><polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/></symbol>
   <symbol id="icon-right-arrow" viewBox="0 0 50 26.003"><polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/></symbol>
-
-  <symbol id="icon-" viewBox="0 0 17.6 17.6"></symbol>
 </svg>
 
 <div class="top-menu">
@@ -62,7 +60,16 @@
 
 <header class="page-header page-header--front">
   <div class="page-header__wrap">
-    <h1 class="page-header__title">Милые штуки ручной работы для дома</h1>
+    <div class="page-header__links">
+      <ul class="page-header__menu-list">
+        <li class="page-header__menu-item"><a href="#">Новые поступления</a></li>
+        <li class="page-header__menu-item"><a href="#">Распродажа</a></li>
+      </ul>
+
+      <span class="page-header__delivery">Бесплатная доставка по России</span>
+    </div>
+
+    <h1 class="page-header__title">Милые штуки ручной<br> работы для дома</h1>
 
     <div class="page-header__goods">
       <a href="#" class="page-header__goods-link">Предметы<br> интерьера</a>
@@ -98,73 +105,83 @@
 
       <img src="img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Вязаные корзинки">
       <div class="pop-goods__price">Цена: 990 руб.</div>
-      <a class="pop-goods__button button" href="#" id="open-modal">Заказать</a>
+      <a class="pop-goods__button button button--block" href="#" id="open-modal">Заказать</a>
     </div>
   </div>
 </section>
 
 <section class="about-us">
   <div class="about-us__wrap">
-    <h2 class="about-us__title">Коротко о нас:</h2>
-    <ul class="about-us__list">
-      <li class="about-us__item about-us__item--icon-flower">Экологически<br> чистые материалы</li>
-      <li class="about-us__item about-us__item--icon-money">Скандинавский стиль<br> по российской цене</li>
-      <li class="about-us__item about-us__item--icon-heart">Увеличивает лайки<br> на фотографиях</li>
-      <li class="about-us__item about-us__item--icon-clew">Связано вручную с<br> любовью и умилением</li>
-      <li class="about-us__item about-us__item--icon-rocket">Поддержка отечественного<br> производителя</li>
-      <li class="about-us__item about-us__item--icon-gift">Поставляется в<br> подарочной упаковке</li>
-    </ul>
+    <div class="about-us__inner">
+      <h2 class="about-us__title">Коротко о нас:</h2>
+      <ul class="about-us__list">
+        <li class="about-us__item about-us__item--icon-flower">Экологически<br> чистые материалы</li>
+        <li class="about-us__item about-us__item--icon-money">Скандинавский стиль<br> по российской цене</li>
+        <li class="about-us__item about-us__item--icon-heart">Увеличивает лайки<br> на фотографиях</li>
+        <li class="about-us__item about-us__item--icon-clew">Связано вручную с<br> любовью и умилением</li>
+        <li class="about-us__item about-us__item--icon-rocket">Поддержка отечественного<br> производителя</li>
+        <li class="about-us__item about-us__item--icon-gift">Поставляется в<br> подарочной упаковке</li>
+      </ul>
+    </div>
   </div>
 </section>
 
 <section class="reviews">
   <div class="reviews__wrap">
-    <h2 class="reviews__title">Отзывы</h2>
+    <div class="reviews__inner">
+      <h2 class="reviews__title">Отзывы</h2>
 
-    <blockquote class="reviews__quote quote">
-      <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-      <cite class="quote__author">Анастасия Красильникова <span>@misssssiskras</span></cite>
-    </blockquote>
+      <blockquote class="reviews__quote quote">
+        <p>Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <cite class="quote__author">Анастасия Красильникова<br><span>@misssssiskras</span></cite>
+      </blockquote>
 
-    <ul class="reviews__pager pager">
-      <li class="pager__item pager__item--previous" aria-label="Предыдущий">
-        <svg width="50" height="26"><use xlink:href="#icon-left-arrow"></use></svg>
-      </li>
+      <ul class="reviews__pager pager">
+        <li class="pager__item pager__item--previous" aria-label="Предыдущий">
+          <svg width="50" height="26"><use xlink:href="#icon-left-arrow"></use></svg>
+        </li>
 
-      <li class="pager__item pager__item--next" aria-label="Следующий">
-        <svg width="50" height="26"><use xlink:href="#icon-right-arrow"></use></svg>
-      </li>
-    </ul>
+        <li class="pager__item pager__item--next" aria-label="Следующий">
+          <svg width="50" height="26"><use xlink:href="#icon-right-arrow"></use></svg>
+        </li>
+      </ul>
 
-    <a class="reviews__button button" href="#">Написать</a>
+      <a class="reviews__button button" href="#">Написать</a>
+    </div>
   </div>
 </section>
 
 <section class="contacts">
   <div class="contacts__wrap contacts__wrap--bg-flag">
-    <h2 class="contacts__title">Контакты</h2>
+    <div class="contacts__inner">
+      <h2 class="contacts__title">Контакты</h2>
 
-    <dl class="contacts__list">
-      <dt>e-mail:</dt>
-      <dd><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
-      <dt>адрес:</dt>
-      <dd>
-        г. Санкт-Петербург,<br>
-        ул. Большая Конюшенная,<br>
-        д. 19/8, офис 101
-      </dd>
-    </dl>
+      <dl class="contacts__list">
+        <dt>e-mail:</dt>
+        <dd><a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></dd>
+        <dt>адрес:</dt>
+        <dd>
+          г. Санкт-Петербург,<br>
+          ул. Большая Конюшенная,<br>
+          д. 19/8, офис 101
+        </dd>
+      </dl>
+    </div>
   </div>
 
-    <div class="contacts__map"></div>
+  <div class="contacts__map" id="map"></div>
 
-  <div class="contacts__wrap contacts__wrap--center">
-    <a class="contacts__button button" href="#">Напишите нам</a>
+  <div class="contacts__wrap">
+    <div class="contacts__inner contacts__inner--center">
+      <a class="contacts__button button" href="#">Напишите нам</a>
+    </div>
   </div>
 </section>
 
 <footer class="page-footer">
   <div class="page-footer__wrap">
+    <div class="page-footer__logo">logo</div>
+
     <div class="page-footer__social-links social-links">
       <a class="social-links__link" href="https://www.instagram.com/htmlacademy" target="_blank" rel="noopener" title="Инстаграм" aria-label="мы в Инстаграм">
         <svg width="22" height="21"><use xlink:href="#icon-insta"></use></svg>
@@ -218,6 +235,7 @@
   </div>
 </div>
 
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script>
   var topMenu = document.querySelector(".top-menu__nav");
   var topMenuButton = document.querySelector(".top-menu__button");
@@ -251,6 +269,30 @@
     modal.style.display = 'block';
     evt.preventDefault();
   });
+</script>
+<script>
+  ymaps.ready(init);
+
+  function init () {
+    var myMap = new ymaps.Map('map', {
+      center: [59.9364, 30.3217],
+      zoom: 17,
+      controls: ['smallMapDefaultSet']
+    }),
+
+    myPlacemark = new ymaps.Placemark([59.9364, 30.3218], {
+      balloonContent: 'г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101'
+    }, {
+      iconLayout: 'default#image',
+      //iconImageClipRect: [[0,0], [66, 101]],
+      iconImageHref: 'img/icon-map-pin.svg',
+      iconImageSize: [66, 101],
+      iconImageOffset: [-33, -101]
+    });
+
+    myMap.geoObjects.add(myPlacemark);
+    myMap.behaviors.disable('drag');
+  }
 </script>
 </body>
 </html>
