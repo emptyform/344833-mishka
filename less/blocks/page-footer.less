@@ -6,6 +6,10 @@
   .container();
 }
 
+.page-footer__logo {
+  display: none;
+}
+
 .page-footer__social-links {
   display: flex;
   justify-content: center;
@@ -54,9 +58,19 @@
 }
 
 @media @tablet-width {
+  .page-footer {
+    padding-top: 35px;
+    padding-bottom: 30px;
+  }
+
   .page-footer__wrap {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-footer__logo {
+    display: block;
   }
 
   .page-footer__social-links {

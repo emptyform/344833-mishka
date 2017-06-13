@@ -1,11 +1,15 @@
 .card {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   border: 1px solid #ececec;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .card__wrap {
-  padding: 28px;
+  padding: 26px;
 }
 
 .card__img-link {
@@ -22,6 +26,9 @@
 }
 
 .card__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
@@ -50,6 +57,7 @@
 .card__button {
   margin: 0;
   padding: 0;
+
   background-color: transparent;
   border: none;
   outline: none;
@@ -71,10 +79,38 @@
 @media @tablet-width {
   .card {
     display: flex;
+    //height: 332px; /* временно, удалить */
+    margin-bottom: 54px;
   }
 
   .card__img-link {
-    width: 334px;
+    width: 50%;
+  }
+
+  .card__wrap {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  .card__title {
+    font-size: 20px;
+  }
+
+  .card__dimensions {
+    font-size: 15px;
+  }
+
+  .card__footer {
+    margin-top: auto;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .card__price {
+    font-size: 17px;
   }
 }
 

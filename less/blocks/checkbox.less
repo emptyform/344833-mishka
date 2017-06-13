@@ -13,8 +13,6 @@
   position: relative;
 
   display: block;
-  margin-top: 12px;
-  margin-bottom: 12px;
   padding: 11px 0 11px 62px;
 
   font-weight: 700;
@@ -36,7 +34,7 @@
 
     box-sizing: border-box;
     width: 40px;
-    height: 40px;
+    height: 39px;
 
     border: 2px solid #444444;
   }
@@ -52,5 +50,31 @@
 
     background: url("../img/icon-tick.svg") no-repeat 50%;
     background-size: 22px 16px;
+  }
+}
+
+@media @tablet-width {
+  .checkbox__label {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 80px;
+    font-size: 19px;
+
+    &::before {
+      width: 54px;
+      height: 52px;
+    }
+  }
+
+  .checkbox__input:checked + .checkbox__label {
+    &::after {
+      top: 11px;
+      left: 11px;
+
+      width: 33px;
+      height: 33px;
+
+      background-size: 33px 22px;
+    }
   }
 }

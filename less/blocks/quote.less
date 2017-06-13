@@ -1,5 +1,13 @@
 .quote {
   line-height: 30px;
+
+  p {
+    margin-top: 0;
+
+    &:last-of-type {
+      margin-bottom: 25px;
+    }
+  }
 }
 
 .quote__author {
@@ -24,6 +32,13 @@
 
   .quote__author {
     display: block;
-    margin-top: 65px;
+    margin-top: 60px;
+    font-size: 17px;
+  }
+}
+
+@media @desktop-width {
+  .quote__author {
+    margin-top: 40px;
   }
 }

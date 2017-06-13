@@ -1,8 +1,16 @@
+.about-us {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
 .about-us__wrap {
   .container();
 }
 
 .about-us__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
@@ -14,45 +22,92 @@
 }
 
 .about-us__item {
-  margin-bottom: 15px;
-  padding-top: 50px;
+  position: relative;
+
+  margin-bottom: 23px;
+  padding-top: 60px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   color: #000000;
 
-  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+
+    display: block;
+    width: 55px;
+    height: 38px;
+
+    background-repeat: no-repeat;
+  }
 
   &--icon-flower {
-    background-image: url("../img/icon-feature-1.svg");
+    &::before {
+      top: 7px;
+      left: 7px;
+
+      background-image: url("../img/icon-feature-1.svg");
+    }
   }
 
   &--icon-money {
-    background-image: url("../img/icon-feature-3.svg");
+    &::before {
+      top: 7px;
+      left: 0;
+
+      background-image: url("../img/icon-feature-3.svg");
+    }
   }
 
   &--icon-heart {
-    background-image: url("../img/icon-feature-5.svg");
+    &::before {
+      top: 12px;
+      left: 7px;
+
+      background-image: url("../img/icon-feature-5.svg");
+    }
   }
 
   &--icon-clew {
-    background-image: url("../img/icon-feature-2.svg");
+    &::before {
+      top: 9px;
+      left: 3px;
+
+      background-image: url("../img/icon-feature-2.svg");
+    }
   }
 
   &--icon-rocket {
-    background-image: url("../img/icon-feature-4.svg");
+    &::before {
+      top: 11px;
+      left: -5px;
+
+      background-image: url("../img/icon-feature-4.svg");
+    }
   }
 
   &--icon-gift {
-    background-image: url("../img/icon-feature-6.svg");
+    &::before {
+      top: 9px;
+      left: 3px;
+
+      background-image: url("../img/icon-feature-6.svg");
+    }
   }
 }
 
 @media @tablet-width {
+  .about-us {
+    padding-top: 49px;
+  }
+
   .about-us__title {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 42px;
   }
 
   .about-us__list {
@@ -65,13 +120,39 @@
 
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 52px;
+    order: 5;
+
+    &--icon-flower {
+      order: 0;
+    }
+
+    &--icon-clew {
+      order: 1;
+    }
+
+    &--icon-money {
+      order: 2;
+    }
+
+    &--icon-rocket {
+      order: 3;
+    }
   }
 }
 
 @media @desktop-width {
-  .about-us__wrap {
-    padding-right: 225px;
-    padding-left: 225px;
-    width: 700px;
+  .about-us {
+    padding-top: 60px;
+  }
+
+  .about-us__inner {
+    padding-right: 175px;
+    padding-left: 175px;
+  }
+
+  .about-us__title {
+    font-size: 53px;
+    line-height: 57px;
   }
 }

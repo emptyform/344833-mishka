@@ -13,8 +13,6 @@
   position: relative;
 
   display: block;
-  margin-top: 12px;
-  margin-bottom: 12px;
   padding: 11px 0 11px 62px;
 
   font-weight: 700;
@@ -55,5 +53,30 @@
     height: 16px;
 
     background-color: #62d1ba;
+  }
+}
+
+@media @tablet-width {
+  .radio__label {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    padding-left: 80px;
+
+    font-size: 19px;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  .radio__input:checked + .radio__label {
+    &::after {
+      top: 15px;
+      left: 15px;
+
+      width: 22px;
+      height: 22px;
+    }
   }
 }
