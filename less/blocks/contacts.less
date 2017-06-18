@@ -25,6 +25,11 @@
   background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50%, 50%;
+
+  @media @retina {
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@2x.jpg");
+    background-size: auto, 320px auto;
+  }
 }
 
 .contacts__list {
@@ -41,27 +46,27 @@
     margin-bottom: 32px;
     margin-left: 77px;
   }
+}
 
-  a {
-    padding-bottom: 4px;
+.contacts__mail-link {
+  padding-bottom: 4px;
 
-    color: #444444;
-    text-decoration: none;
+  color: #444444;
+  text-decoration: none;
 
-    border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid #62d1ba;
 
-    &:hover,
-    &:focus {
-      color: #46c1ae;
+  &:hover,
+  &:focus {
+    color: #46c1ae;
 
-      border-color: #46c1ae;
-    }
+    border-color: #46c1ae;
+  }
 
-    &:active {
-      color: rgba(70, 193, 174, 0.3);
+  &:active {
+    color: rgba(70, 193, 174, 0.3);
 
-      border-color: rgba(70, 193, 174, 0.1);
-    }
+    border-color: rgba(70, 193, 174, 0.1);
   }
 }
 
@@ -118,6 +123,13 @@
   .contacts__map {
     margin-top: 50px;
     margin-bottom: 57px;
+
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-tablet@1x.jpg");
+
+    @media @retina {
+      background-image: url("../img/icon-map-pin.svg"), url("../img/map-tablet@2x.jpg");
+      background-size: auto, 768px auto;
+    }
   }
 }
 
@@ -132,6 +144,7 @@
   .contacts__inner {
     box-sizing: border-box;
     width: 50%;
+    padding-right: 30px;
     padding-left: 175px;
 
     &--center {
@@ -153,8 +166,8 @@
 
     dd {
       width: auto;
-      margin-left: 77px;
       margin-bottom: 30px;
+      margin-left: 77px;
     }
   }
 
@@ -165,6 +178,13 @@
 
     width: 525px;
     margin: 0;
+
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-desktop@1x.jpg");
+
+    @media @retina {
+      background-image: url("../img/icon-map-pin.svg"), url("../img/map-desktop@2x.jpg");
+      background-size: auto, 525px auto;
+    }
   }
 
   .contacts__wrap--bg-flag::before {

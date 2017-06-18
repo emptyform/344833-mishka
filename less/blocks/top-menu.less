@@ -8,6 +8,7 @@
 
 .top-menu__wrap {
   position: relative;
+
   min-width: 320px;
 }
 
@@ -16,6 +17,21 @@
   justify-content: center;
   align-items: center;
   height: 79px;
+
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  img {
+    vertical-align: bottom;
+  }
 }
 
 .top-menu__nav {
@@ -82,7 +98,7 @@
   }
 }
 
-@media @tablet-width {
+@media @desktop-width {
   .top-menu__wrap {
     width: 1050px;
   }

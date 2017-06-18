@@ -1,15 +1,17 @@
 .card {
-  margin-bottom: 32px;
-
   border: 1px solid #ececec;
 
-  &:last-child {
-    margin-bottom: 0;
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
   }
 }
 
 .card__wrap {
-  padding: 26px;
+  padding: 28px;
 }
 
 .card__img-link {
@@ -25,14 +27,27 @@
   }
 }
 
+.card__link-title {
+  color: #000000;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .card__title {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
 }
 
 .card__footer {
@@ -68,11 +83,15 @@
 
   &:hover,
   &:focus {
-    fill: #63d1bb;
+    svg {
+      fill: #63d1bb;
+    }
   }
 
   &:active {
-    fill: rgba(99, 209, 187, 0.3);
+    svg {
+      fill: rgba(99, 209, 187, 0.3);
+    }
   }
 }
 
@@ -80,7 +99,6 @@
   .card {
     display: flex;
     //height: 332px; /* временно, удалить */
-    margin-bottom: 54px;
   }
 
   .card__img-link {
@@ -93,6 +111,7 @@
     flex-direction: column;
     box-sizing: border-box;
     width: 50%;
+    padding-top: 25px;
   }
 
   .card__title {
@@ -117,10 +136,23 @@
 @media @desktop-width {
   .card {
     flex-direction: column;
-    width: 316px;
+    width: 317px;
+  }
+
+  .card__wrap {
+    width: auto;
   }
 
   .card__img-link {
     width: 100%;
+  }
+
+  .card__dimensions {
+    margin-bottom: 15px;
+  }
+
+  .card__footer {
+    margin-right: 0;
+    margin-left: 0;
   }
 }

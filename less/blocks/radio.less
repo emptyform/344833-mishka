@@ -40,6 +40,19 @@
 
     border: 2px solid #444444;
   }
+
+  &:hover,
+  &:focus {
+    &::before {
+      border-color: #62d1ba;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: rgba(68, 68, 68, 0.3);
+    }
+  }
 }
 
 .radio__input:checked + .radio__label {

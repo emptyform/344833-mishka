@@ -1,7 +1,9 @@
 body {
+  min-width: 320px;
   margin: 0;
 
   font-size: 15px;
+  line-height: 24px;
   font-family: "OpenSans", "Helvetica", "Arial", sans-serif;
   color: #444444;
 
@@ -16,4 +18,11 @@ p {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@media @tablet-width {
+  body {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
