@@ -39,8 +39,7 @@
     border: 2px solid #444444;
   }
 
-  &:hover,
-  &:focus {
+  &:hover {
     &::before {
       border-color: #62d1ba;
     }
@@ -64,6 +63,10 @@
     background: url("../img/icon-tick.svg") no-repeat 50%;
     background-size: 22px 16px;
   }
+}
+
+.checkbox__input:focus + .checkbox__label::before {
+  border-color: #62d1ba;
 }
 
 @media @tablet-width {

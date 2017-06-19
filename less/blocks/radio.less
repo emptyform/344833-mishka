@@ -41,8 +41,7 @@
     border: 2px solid #444444;
   }
 
-  &:hover,
-  &:focus {
+  &:hover{
     &::before {
       border-color: #62d1ba;
     }
@@ -67,6 +66,10 @@
 
     background-color: #62d1ba;
   }
+}
+
+.radio__input:focus + .radio__label::before {
+  border-color: #62d1ba;
 }
 
 @media @tablet-width {
