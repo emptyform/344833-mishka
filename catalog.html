@@ -107,7 +107,7 @@
         <div class="card__footer">
           <div class="card__price">1 200 руб.</div>
 
-          <button class="card__button" type="button" aria-label="Добавит в корзину">
+          <button class="card__button" id="add-card-1" type="button" aria-label="Добавит в корзину">
             <svg width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
           </button>
         </div>
@@ -133,7 +133,7 @@
         <div class="card__footer">
           <div class="card__price">690 руб.</div>
 
-          <button class="card__button" type="button" aria-label="Добавит в корзину">
+          <button class="card__button" id="add-card-2" type="button" aria-label="Добавит в корзину">
             <svg width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
           </button>
         </div>
@@ -159,7 +159,7 @@
         <div class="card__footer">
           <div class="card__price">1 500 руб.</div>
 
-          <button class="card__button" type="button" aria-label="Добавит в корзину">
+          <button class="card__button" id="add-card-3" type="button" aria-label="Добавит в корзину">
             <svg width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
           </button>
         </div>
@@ -280,7 +280,7 @@
 </script>
 <script>
   var modal = document.querySelector(".modal");
-  var modalButton = document.getElementById("open-modal");
+  var modalButton = document.getElementById("add-card-1");
 
   modalButton.addEventListener("click", function (evt) {
     modal.style.display = 'block';
