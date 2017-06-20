@@ -14,14 +14,14 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: @contacts__title-color;
 }
 
 .contacts__map {
   height: 457px;
   margin-bottom: 40px;
 
-  background-color: #eae6dd;
+  background-color: @contacts__map-bg;
   background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50%, 50%;
@@ -51,22 +51,22 @@
 .contacts__mail-link {
   padding-bottom: 4px;
 
-  color: #444444;
+  color: @contacts__mail-link-color;
   text-decoration: none;
 
-  border-bottom: 1px solid #62d1ba;
+  border-bottom: 1px solid @contacts__mail-link-border;
 
   &:hover,
   &:focus {
-    color: #46c1ae;
+    color: @contacts__mail-link-color-hover;
 
-    border-color: #46c1ae;
+    border-color: @contacts__mail-link-border-hover;
   }
 
   &:active {
-    color: rgba(70, 193, 174, 0.3);
+    color: @contacts__mail-link-color-active;
 
-    border-color: rgba(70, 193, 174, 0.1);
+    border-color: @contacts__mail-link-border-active;
   }
 }
 

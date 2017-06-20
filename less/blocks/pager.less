@@ -9,7 +9,7 @@
 
   text-align: center;
 
-  border: 1px solid #c6c6c6;
+  border: 1px solid @pager__item-border;
 
   &:first-child {
     margin-right: -1px;
@@ -27,13 +27,13 @@
   &:hover,
   &:focus {
     svg {
-      fill: rgba(0, 0, 0, 0.6);
+      fill: @pager__item-fill-hover;
     }
   }
 
   &:active {
     svg {
-      fill: rgba(0, 0, 0, 0.3);
+      fill: @pager__item-fill-active;
     }
   }
 }

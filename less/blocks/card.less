@@ -1,12 +1,12 @@
 .card {
-  border: 1px solid #ececec;
+  border: 1px solid @card-border;
 
   &:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 @card-shadow;
   }
 
   &:active {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px 0 @card-shadow;
   }
 }
 
@@ -20,7 +20,7 @@
 
   text-align: center;
 
-  background-color: #f1f1f1;
+  background-color: @card__img-link-bg;
 
   img {
     vertical-align: bottom;
@@ -28,16 +28,16 @@
 }
 
 .card__link-title {
-  color: #000000;
+  color: @card__link-title-color;
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: rgba(0, 0, 0, 0.6);
+    color: @card__link-title-color-hover;
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: @card__link-title-color-active;
   }
 }
 
@@ -56,7 +56,7 @@
   margin-top: 20px;
   padding-top: 20px;
 
-  border-top: 1px solid #ececec;
+  border-top: 1px solid @card__footer-border;
 }
 
 .card__dimensions {
@@ -78,19 +78,19 @@
   outline: none;
 
   svg {
-    fill: rgba(35, 31, 32, 0.2);
+    fill: @card__button-fill;
   }
 
   &:hover,
   &:focus {
     svg {
-      fill: #63d1bb;
+      fill: @card__button-fill-hover;
     }
   }
 
   &:active {
     svg {
-      fill: rgba(99, 209, 187, 0.3);
+      fill: @card__button-fill-active;
     }
   }
 }
@@ -98,7 +98,6 @@
 @media @tablet-width {
   .card {
     display: flex;
-    //height: 332px; /* временно, удалить */
   }
 
   .card__img-link {

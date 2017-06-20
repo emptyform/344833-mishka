@@ -43,7 +43,7 @@
 
   &:hover,
   &:focus {
-    color: rgba(0, 0, 0, 0.6);
+    color: @page-footer__copyright-link-color-hover;
 
     svg {
       fill: @page-footer__copyright-link-fill-hover;
@@ -51,7 +51,7 @@
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.3);
+    color: @page-footer__copyright-link-color-active;
 
     svg {
       fill: @page-footer__copyright-link-fill-active;
@@ -80,19 +80,19 @@
     display: block;
 
     svg {
-      fill: #231f20;
+      fill: @page-footer__link-fill;
     }
 
     &:hover,
     &:focus {
       svg {
-        fill: #46c1ae;
+      @page-footer__link-fill-hover;
       }
     }
 
     &:active {
       svg {
-        fill: rgba(70, 193, 174, 0.3);
+        fill: @page-footer__link-fill-active;
       }
     }
   }

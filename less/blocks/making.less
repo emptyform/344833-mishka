@@ -5,14 +5,14 @@
 }
 
 .making__wrap {
-  border: 1px solid #ececec;
+  border: 1px solid @making__wrap-border;
 
   &:hover {
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 10px 0 @making__wrap-shadow;
   }
 
   &:active {
-    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px 0 @making__wrap-shadow;
   }
 }
 
@@ -28,7 +28,7 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: @making__title-color;
 
   background: url("../img/icon-video.svg") no-repeat 33px 50%;
 }

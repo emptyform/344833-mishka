@@ -2,7 +2,7 @@
   display: flex; /* @see Flexbug 3.2.b  https://github.com/philipwalton/flexbugs */
   flex-direction: column;
 
-  background-color: #f1f1f1;
+  background-color: @page-header-bg;
 
   &--front {
     background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -18px;
@@ -48,7 +48,7 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: @page-header__title-color;
 }
 
 .page-header__goods {
@@ -66,22 +66,22 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  color: #ffffff;
+  color: @page-header__goods-link-color;
   text-decoration: none;
 
-  background-color: #63d1bb;
+  background-color: @page-header__goods-link-bg;
   outline: none;
 
 
   &:hover,
   &:focus {
-    background-color: #59d5bc;
+    background-color: @page-header__goods-link-bg-hover;
   }
 
   &:active {
-    color: rgba(255, 255, 255, 0.3);
+    color: @page-header__goods-link-color-active;
 
-    background-color: #59d5bc;
+    background-color: @page-header__goods-link-bg-hover;
   }
 
   &::before {
@@ -99,12 +99,12 @@
   }
 
   &--darken {
-    background-color: #56c3b2;
+    background-color: @page-header__goods-link--darken-bg;
 
     &:hover,
     &:focus,
     &:active {
-      background-color: #46c1ae;
+      background-color: @page-header__goods-link--darken-bg-hover;
     }
 
     &::before {
@@ -240,16 +240,16 @@
       font-size: 15px;
       line-height: 24px;
       vertical-align: top;
-      color: #000000;
+      color: @page-header__menu-list-color;
       text-decoration: none;
 
       &:hover,
       &:focus {
-        color: rgba(0, 0, 0, 0.6);
+      @page-header__menu-list-color-hover;
       }
 
       &:active {
-        color: rgba(0, 0, 0, 0.3);
+      @page-header__menu-list-color-active;
       }
     }
   }

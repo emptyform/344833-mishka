@@ -3,7 +3,7 @@
 
   font-weight: 700;
   font-size: 17px;
-  color: #000000;
+  color: @textfield__label-color;
 }
 
 .textfield__input {
@@ -16,17 +16,17 @@
   font-size: 17px;
   line-height: 18px;
   font-family: inherit;
-  color: #444444;
+  color: @textfield__input-color;
 
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid @textfield__input-border;
   outline: none;
 
   &:hover,
   &:focus,
   &:active {
-    border-color: #62d1ba;
+    border-color: @textfield__input-border-hover;
   }
 
   &--tel {
@@ -51,7 +51,7 @@
     height: 142px;
     padding: 13px 15px;
 
-    border: 2px solid #000000;
+    border: 2px solid @textfield__input-border;
 
     resize: vertical;
   }
