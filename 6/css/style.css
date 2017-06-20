@@ -26,13 +26,13 @@ img {
   font-weight: normal;
   font-family: "OpenSans";
   font-style: normal;
-  src: url("../fonts/opensans.woff") format("woff"), url("../fonts/opensans.woff2") format("woff2");
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 @font-face {
   font-weight: bold;
   font-family: "OpenSans";
   font-style: normal;
-  src: url("../fonts/opensansbold.woff") format("woff"), url("../fonts/opensansbold.woff2") format("woff2");
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 .pager {
   display: -ms-flexbox;
@@ -45,7 +45,7 @@ img {
 .pager__item {
   width: 100%;
   text-align: center;
-  border: 1px solid #c6c6c6;
+  border: 1px solid #ececec;
 }
 .pager__item:first-child {
   margin-right: -1px;
@@ -150,6 +150,7 @@ img {
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+  cursor: pointer;
 }
 .radio__label::before,
 .radio__label::after {
@@ -170,7 +171,7 @@ img {
   border-color: #62d1ba;
 }
 .radio__label:active::before {
-  border-color: rgba(68, 68, 68, 0.3);
+  border-color: rgba(35, 31, 32, 0.3);
 }
 .radio__input:checked + .radio__label {
   border-color: #62d1ba;
@@ -219,6 +220,7 @@ img {
   font-size: 17px;
   line-height: 18px;
   color: #000000;
+  cursor: pointer;
 }
 .checkbox__label::before,
 .checkbox__label::after {
@@ -238,7 +240,7 @@ img {
   border-color: #62d1ba;
 }
 .checkbox__label:active::before {
-  border-color: rgba(68, 68, 68, 0.3);
+  border-color: rgba(35, 31, 32, 0.3);
 }
 .checkbox__input:checked + .checkbox__label::after {
   top: 9px;
@@ -1024,10 +1026,10 @@ img {
   }
   .page-header__menu-list a:hover,
   .page-header__menu-list a:focus {
-    color: rgba(0, 0, 0, 0.6);
+    @page-header __menu-list-color-hover;
   }
   .page-header__menu-list a:active {
-    color: rgba(0, 0, 0, 0.3);
+    @page-header __menu-list-color-active;
   }
   .page-header__menu-item {
     margin-right: 60px;
@@ -1459,7 +1461,7 @@ img {
 .contacts__map {
   height: 457px;
   margin-bottom: 40px;
-  background-color: #eae6dd;
+  background-color: #ececec;
   background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50%, 50%;
@@ -1660,7 +1662,7 @@ img {
 .video {
   position: relative;
   text-align: center;
-  background-color: #e6e6e6;
+  background-color: #f1f1f1;
 }
 .video video {
   vertical-align: bottom;
