@@ -2,7 +2,8 @@
   padding-top: 14px;
   padding-bottom: 50px;
 
-  background: url("../img/zigzag-line-mobile.svg") repeat-x 0 100%;
+  background: url("../img/bg-zigzag-line.svg") repeat-x bottom;
+  background-size: auto 7px;
 }
 
 .reviews__wrap {
@@ -16,7 +17,7 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: @reviews__title-color;
 }
 
 .reviews__quote {
@@ -30,6 +31,7 @@
 
 @media @tablet-width {
   .reviews {
+    background-size: auto 15px;
   }
 
   .reviews__wrap {
@@ -39,7 +41,12 @@
     padding-top: 75px;
     padding-bottom: 50px;
 
-    background: url("../img/review@1x.jpg") no-repeat;;
+    background: url("../img/review@1x.jpg") no-repeat;
+
+    @media @retina {
+      background-image: url("../img/review@2x.jpg");
+      background-size: 350px auto;
+    }
   }
 
   .reviews__title {
@@ -66,6 +73,8 @@
   .reviews {
     padding-top: 20px;
     padding-bottom: 90px;
+
+    background-size: auto;
   }
 
   .reviews__wrap {

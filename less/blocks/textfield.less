@@ -3,30 +3,57 @@
 
   font-weight: 700;
   font-size: 17px;
-  color: #000000;
+  color: @textfield__label-color;
 }
 
 .textfield__input {
   display: block;
   box-sizing: border-box;
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 
   font-size: 17px;
   line-height: 18px;
   font-family: inherit;
+  color: @textfield__input-color;
 
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid @textfield__input-border;
   outline: none;
 
-  &--textarea {
-    padding: 13px 15px;
-    height: 142px;
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: @textfield__input-border-hover;
+  }
 
-    border: 2px solid #000000;
+  &--tel {
+    background: url("../img/icon-phone.svg") no-repeat top 10px right 10px;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/icon-phone-hover.svg");
+    }
+  }
+
+  &--email {
+    background: url("../img/icon-mail.svg") no-repeat center right 5px;
+
+    &:hover,
+    &:focus {
+      background-image: url("../img/icon-mail-hover.svg");
+    }
+  }
+
+  &--textarea {
+    height: 142px;
+    padding: 13px 15px;
+
+    border: 2px solid @textfield__input-border;
+
+    resize: vertical;
   }
 }
 
@@ -38,6 +65,7 @@
 
   .textfield__label {
     margin-right: 25px;
+
     font-size: 19px;
   }
 
@@ -45,6 +73,31 @@
     padding-top: 12px;
     padding-bottom: 13px;
     padding-left: 17px;
+
     font-size: 19px;
+
+    &--tel {
+      background-position: top 10px right 25px;
+    }
+
+    &--email {
+      background-position: center right 23px;
+    }
+
+    &--textarea {
+      padding: 15px;
+    }
+  }
+}
+
+@media @desktop-width {
+  .textfield__input {
+    &--tel {
+      background-position: top 10px right 10px;
+    }
+
+    &--email {
+      background-position: center right 5px;
+    }
   }
 }

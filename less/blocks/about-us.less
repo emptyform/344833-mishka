@@ -14,7 +14,7 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: @about-us__title-color;
 }
 
 .about-us__list {
@@ -30,7 +30,7 @@
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  color: #000000;
+  color: @about-us__item-color;
 
 
   &::before {
@@ -105,9 +105,10 @@
   }
 
   .about-us__title {
+    margin-bottom: 42px;
+
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 42px;
   }
 
   .about-us__list {
@@ -116,12 +117,12 @@
   }
 
   .about-us__item {
+    order: 5;
     width: 50%;
+    margin-bottom: 52px;
 
     font-size: 20px;
     line-height: 22px;
-    margin-bottom: 52px;
-    order: 5;
 
     &--icon-flower {
       order: 0;

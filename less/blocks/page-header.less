@@ -1,8 +1,16 @@
 .page-header {
-  background-color: #f1f1f1;
+  display: flex; /* @see Flexbug 3.2.b  https://github.com/philipwalton/flexbugs */
+  flex-direction: column;
+
+  background-color: @page-header-bg;
 
   &--front {
     background: #f9f9f9 url("../img/hero-mobile@1x.jpg") no-repeat 50% -18px;
+
+    @media @retina {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: 575px;
+    }
   }
 }
 
@@ -40,7 +48,7 @@
   font-size: 27px;
   line-height: 30px;
   text-align: center;
-  color: #000000;
+  color: @page-header__title-color;
 }
 
 .page-header__goods {
@@ -58,10 +66,23 @@
   font-weight: 700;
   font-size: 19px;
   line-height: 24px;
-  color: #ffffff;
+  color: @page-header__goods-link-color;
   text-decoration: none;
 
-  background-color: #63d1bb;
+  background-color: @page-header__goods-link-bg;
+  outline: none;
+
+
+  &:hover,
+  &:focus {
+    background-color: @page-header__goods-link-bg-hover;
+  }
+
+  &:active {
+    color: @page-header__goods-link-color-active;
+
+    background-color: @page-header__goods-link-bg-hover;
+  }
 
   &::before {
     content: "";
@@ -78,7 +99,13 @@
   }
 
   &--darken {
-    background-color: #56c3b2;
+    background-color: @page-header__goods-link--darken-bg;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: @page-header__goods-link--darken-bg-hover;
+    }
 
     &::before {
       top: 19px;
@@ -90,12 +117,43 @@
 }
 
 @media @tablet-width {
+  .page-header {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -11px;
+      z-index: 2;
+
+      width: 100%;
+      height: 24px;
+
+      background: url("../img/bg-zigzag-fill.svg") repeat-x;
+      background-size: 770px 24px;
+    }
+  }
+
   .page-header__wrap {
     min-height: 225px;
   }
 
-  .page-header--front .page-header__wrap {
-    min-height: 746px;
+  .page-header--front {
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-position-y: 0;
+
+    @media @retina {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px;
+    }
+
+    .page-header__wrap {
+      min-height: 746px;
+    }
+
+    .page-header__title {
+      margin-top: 110px;
+    }
   }
 
   .page-header__links {
@@ -107,6 +165,8 @@
   .page-header__delivery {
     display: block;
 
+    font-size: 15px;
+    line-height: 24px;
     text-align: right;
   }
 
@@ -117,12 +177,9 @@
     line-height: 50px;
   }
 
-  .page-header--front .page-header__title {
-    margin-top: 110px;
-  }
-
   .page-header__goods {
     display: flex;
+    align-items: flex-end;
     margin-right: 0;
     margin-left: 0;
   }
@@ -134,6 +191,8 @@
     font-size: 20px;
     line-height: 30px;
 
+    transition: all 0.1s ease 0.1s;
+
     &::before {
       top: 30px;
     }
@@ -144,10 +203,28 @@
         right: 32px;
       }
     }
+
+    &:hover {
+      padding-bottom: 35px;
+    }
   }
 }
 
 @media @desktop-width {
+  .page-header {
+    &::before {
+      bottom: -17px;
+
+      height: 34px;
+
+      background-size: auto;
+    }
+  }
+
+  .page-header__wrap {
+    padding-bottom: 30px;
+  }
+
   .page-header__links {
     display: flex;
     justify-content: space-between;
@@ -162,16 +239,17 @@
       font-weight: bold;
       font-size: 15px;
       line-height: 24px;
-      color: #000000;
+      vertical-align: top;
+      color: @page-header__menu-list-color;
       text-decoration: none;
 
       &:hover,
       &:focus {
-        color: rgba(0, 0, 0, 0.6);
+      @page-header__menu-list-color-hover;
       }
 
       &:active {
-        color: rgba(0, 0, 0, 0.3);
+      @page-header__menu-list-color-active;
       }
     }
   }
@@ -183,5 +261,17 @@
   .page-header__title {
     font-size: 53px;
     line-height: 57px;
+  }
+
+  .page-header--front {
+    background-size: 1250px 746px;
+
+    .page-header__wrap {
+      padding-bottom: 0;
+    }
+
+    .page-header__title {
+      margin-top: 105px;
+    }
   }
 }

@@ -2,7 +2,8 @@
   padding-top: 27px;
   padding-bottom: 40px;
 
-  background: url("../img/zigzag-line-mobile.svg") repeat-x 0 100%;
+  background: url("../img/bg-zigzag-line.svg") repeat-x bottom;
+  background-size: auto 7px;
 
   img {
     display: block;
@@ -21,34 +22,35 @@
   font-weight: 700;
   font-size: 25px;
   line-height: 30px;
-  color: #000000;
+  color: @pop-goods__title-color;
 }
 
 .pop-goods__subtitle {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  color: #63d1bb;
+  color: @pop-goods__subtitle-color;
   text-transform: uppercase;
 }
 
 .pop-goods__description {
-  padding-top: 7px;
-  padding-bottom: 1px;
+  margin-top: 24px;
+  margin-bottom: 17px;
 
   line-height: 24px;
 }
 
 .pop-goods__table {
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 
   border-collapse: collapse;
+  line-height: 20px;
 
   td {
     padding: 10px 10px 10px 0;
 
-    border-bottom: 1px solid #ececec;
+    border-bottom: 1px solid @pop-goods__table-border;
 
     &:first-child {
       padding-right: 20px;
@@ -70,16 +72,21 @@
   .pop-goods {
     padding-top: 45px;
     padding-bottom: 70px;
+
+    background-size: auto 15px;
   }
 
   .pop-goods__wrap {
     position: relative;
+
+    min-height: 510px;
   }
 
   .pop-goods__title {
+    margin-bottom: 50px;
+
     font-size: 43px;
     line-height: 50px;
-    margin-bottom: 27px;
   }
 
   .pop-goods__subtitle {
@@ -96,7 +103,6 @@
   .pop-goods__inner {
     box-sizing: border-box;
     width: 50%;
-    min-height: 315px;
     padding-right: 44px;
 
     img {
@@ -107,13 +113,16 @@
   }
 
   .pop-goods__description {
+    margin-bottom: 36px;
+
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 19px;
   }
 
   .pop-goods__table {
     margin-bottom: 55px;
+
+    font-size: 15px;
 
     td:first-child {
       padding-right: 3px;
@@ -121,8 +130,9 @@
   }
 
   .pop-goods__price {
-    font-size: 20px;
     margin-bottom: 35px;
+
+    font-size: 20px;
   }
 }
 
@@ -130,17 +140,27 @@
   .pop-goods {
     padding-top: 123px;
     padding-bottom: 95px;
+
+    background-size: auto;
+  }
+
+  .pop-goods__wrap {
+    min-height: 580px;
   }
 
   .pop-goods__title {
+    position: relative;
+    z-index: 2;
+
     padding-left: 175px;
+
     font-size: 53px;
     line-height: 57px;
   }
 
   .pop-goods__subtitle {
-    left: 80px;
     top: 15px;
+    left: 80px;
   }
 
   .pop-goods__inner {
@@ -149,7 +169,7 @@
   }
 
   .pop-goods__description {
-    margin-bottom: 33px;
+    margin-bottom: 50px;
   }
 
   .pop-goods__table {

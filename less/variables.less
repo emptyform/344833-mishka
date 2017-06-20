@@ -14,6 +14,13 @@
 @color-main--darkest: #46c1ae; // Темная при наведении/нажатии
 
 
+@tablet-width: ~"(min-width: 768px)";
+@desktop-width: ~"(min-width: 1150px)";
+
+@retina: ~"(min-resolution: 144dpi)", ~"(min-resolution: 1.5dppx)";
+
+/* ============================================================== */
+
 /* Top menu */
 @top-menu-bg:          @white;
 @top-menu-border:      @gray;
@@ -33,6 +40,9 @@
 @main-nav__link-color-active: fade(@black, 30%);
 @main-nav__link-fill-active:  fade(@color-main, 30%);
 
+@main-nav__list--extra-border: @gray;
+@main-nav__list--main-border:  @gray;
+
 /* Page footer */
 @page-footer-bg:                   @gray--light;
 @page-footer__social-links-border: #e5e5e5;
@@ -41,6 +51,13 @@
 @page-footer__copyright-link-fill:        @color-main;
 @page-footer__copyright-link-fill-hover:  @color-main--darkest;
 @page-footer__copyright-link-fill-active: fade(@color-main--darkest, 30%);
+
+@page-footer__copyright-link-color-hover:  fade(@black, 60%);
+@page-footer__copyright-link-color-active: fade(@black, 30%);
+
+@page-footer__link-fill:        @gray--darken;
+@page-footer__link-fill-hover:  @color-main--darkest;
+@page-footer__link-fill-active: fade(@color-main--darkest, 30%);
 
 /* Social links */
 @social-links__link-fill:        @gray--darken;
@@ -80,5 +97,111 @@
 
 @modal__title-color: @black;
 
+/* About us */
+@about-us__title-color: @black;
+@about-us__item-color:  @black;
+
+/* Card */
+@card-border: @gray;
+@card-shadow: fade(@black, 10%);
+
+@card__img-link-bg: @gray--light;
+
+@card__link-title-color:        @black;
+@card__link-title-color-hover:  fade(@black, 60%);
+@card__link-title-color-active: fade(@black, 30%);
+
+@card__footer-border:  @gray;
+
+@card__button-fill:         fade(@gray--darken, 20%);
+@card__button-fill-hover:   @color-main;
+@card__button-fill-active:  fade(@color-main, 30%);
+
+
+/* Checkbox */
+@checkbox__label-color: @black;
+
+@checkbox__label-before-border:        @gray--dark;
+@checkbox__label-before-border-hover:  @color-main--dark;
+@checkbox__label-before-border-active: fade(@gray--darken, 30%);
+
+/* Contacts */
+@contacts__title-color: @black;
+
+@contacts__map-bg: @gray;
+
+@contacts__mail-link-color:         @gray--dark;
+@contacts__mail-link-border:        @color-main--dark;
+@contacts__mail-link-color-hover:   @color-main--darkest;
+@contacts__mail-link-border-hover:  @color-main--darkest;
+@contacts__mail-link-color-active:  fade(@color-main--darkest, 30%);
+@contacts__mail-link-border-active: fade(@color-main--darkest, 10%);
+
+/* Making */
+@making__wrap-border: @gray;
+@making__wrap-shadow: fade(@black, 10%);
+
+@making__title-color: @black;
+
+/* Order */
+@order__subtitle-color: @color-main;
+@order__subtitle-bg:    @color-main--dark;
+
+@order__section-bg: @gray--light;
+
+/* Page header */
+@page-header-bg: @gray--light;
+
+@page-header__title-color: @black;
+
+@page-header__goods-link-color:        @white;
+@page-header__goods-link-bg:           @color-main;
+@page-header__goods-link-bg-hover:     @color-main--light;
+@page-header__goods-link-color-active: fade(@white, 30%);
+
+@page-header__goods-link--darken-bg:       @color-main--darken;
+@page-header__goods-link--darken-bg-hover: @color-main--darkest;
+
+@page-header__menu-list-color:        @black;
+@page-header__menu-list-color-hover:  fade(@black, 60%);
+@page-header__menu-list-color-active: fade(@black, 30%);
+
+/* Pager */
+@pager__item-border:      @gray;
+@pager__item-fill-hover:  fade(@black, 60%);
+@pager__item-fill-active: fade(@black, 30%);
+
+/* Pop goods */
+@pop-goods__title-color: @black;
+
+@pop-goods__subtitle-color: @color-main;
+
+@pop-goods__table-border: @gray;
+
+/* Quote */
+@quote__author-color: @black;
+
 /* Radio */
-@radio__label-border-checked: @button--outline-colored-border-active;
+@radio__label-color: @black;
+
+@radio__label-before-border:        @gray--dark;
+@radio__label-before-border-hover:  @color-main--dark;
+@radio__label-before-border-active: fade(@gray--darken, 30%);
+
+@radio__label-border-checked-border: @color-main--dark;
+
+@radio__label-checked-border:   @color-main--dark;
+@radio__label-checked-after-bg: @color-main--dark;
+
+/* Reviews */
+@reviews__title-color: @black;
+
+/* Textfield */
+@textfield__label-color: @black;
+
+@textfield__input-color:        @gray--dark;
+@textfield__input-border:       @black;
+@textfield__input-border-hover: @color-main--dark;
+
+/* Video */
+@video-bg: @gray--light;

@@ -1,15 +1,17 @@
 .card {
-  margin-bottom: 32px;
+  border: 1px solid @card-border;
 
-  border: 1px solid #ececec;
+  &:hover {
+    box-shadow: 0 6px 10px 0 @card-shadow;
+  }
 
-  &:last-child {
-    margin-bottom: 0;
+  &:active {
+    box-shadow: 0 3px 5px 0 @card-shadow;
   }
 }
 
 .card__wrap {
-  padding: 26px;
+  padding: 28px;
 }
 
 .card__img-link {
@@ -18,21 +20,34 @@
 
   text-align: center;
 
-  background-color: #f1f1f1;
+  background-color: @card__img-link-bg;
 
   img {
     vertical-align: bottom;
   }
 }
 
+.card__link-title {
+  color: @card__link-title-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: @card__link-title-color-hover;
+  }
+
+  &:active {
+    color: @card__link-title-color-active;
+  }
+}
+
 .card__title {
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 4px;
 
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
 }
 
 .card__footer {
@@ -41,7 +56,7 @@
   margin-top: 20px;
   padding-top: 20px;
 
-  border-top: 1px solid #ececec;
+  border-top: 1px solid @card__footer-border;
 }
 
 .card__dimensions {
@@ -63,24 +78,26 @@
   outline: none;
 
   svg {
-    fill: rgba(35, 31, 32, 0.2);
+    fill: @card__button-fill;
   }
 
   &:hover,
   &:focus {
-    fill: #63d1bb;
+    svg {
+      fill: @card__button-fill-hover;
+    }
   }
 
   &:active {
-    fill: rgba(99, 209, 187, 0.3);
+    svg {
+      fill: @card__button-fill-active;
+    }
   }
 }
 
 @media @tablet-width {
   .card {
     display: flex;
-    //height: 332px; /* временно, удалить */
-    margin-bottom: 54px;
   }
 
   .card__img-link {
@@ -93,6 +110,7 @@
     flex-direction: column;
     box-sizing: border-box;
     width: 50%;
+    padding-top: 25px;
   }
 
   .card__title {
@@ -117,10 +135,23 @@
 @media @desktop-width {
   .card {
     flex-direction: column;
-    width: 316px;
+    width: 317px;
+  }
+
+  .card__wrap {
+    width: auto;
   }
 
   .card__img-link {
     width: 100%;
+  }
+
+  .card__dimensions {
+    margin-bottom: 15px;
+  }
+
+  .card__footer {
+    margin-right: 0;
+    margin-left: 0;
   }
 }

@@ -5,8 +5,8 @@
     font-family: "@{family}";
     font-style: @style;
 
-    src: url("../fonts/@{filepath}.woff") format("woff"),
-    url("../fonts/@{filepath}.woff2") format("woff2");
+    src: url("../fonts/@{filepath}.woff2") format("woff2"),
+    url("../fonts/@{filepath}.woff") format("woff");
   }
 }
 
@@ -30,12 +30,8 @@
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-@tablet-width: ~"(min-width: 768px)";
-@desktop-width: ~"(min-width: 1150px)";
-
 /* Media queries. */
 .container() {
-  min-width: 260px;
   padding-right: 30px;
   padding-left: 30px;
 
